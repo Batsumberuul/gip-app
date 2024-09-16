@@ -10,6 +10,7 @@ export default function Home() {
     const getgifs = async () => {
       const respose = await fetch(url);
       const { data } = await respose.json();
+
       console.log(data);
       setGifs(data);
     };
